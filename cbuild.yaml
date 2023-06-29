@@ -9,6 +9,7 @@ steps:
   #args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/hello-app', '.']
   echo "Dummy build step"
 
+
 script: |
     #!/usr/bin/env bash
     echo "LW_ACCOUNT=$(LW_ACCOUNT)" > env.list
