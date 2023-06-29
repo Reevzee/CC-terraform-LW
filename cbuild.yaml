@@ -1,14 +1,14 @@
+variables:
+  LW_ACCOUNT: $LW_ACCOUNT
+  LW_API_KEY: $LW_API_KEY
+  LW_API_SECRET: $LW_API_SECRET
+
 steps:
 #build docker container
 - name: 'gcr.io/cloud-builders/docker'
   #args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/hello-app', '.']
   echo "Dummy build step"
-  
-variables:
-  LW_ACCOUNT: $LW_ACCOUNT
-  LW_API_KEY: $LW_API_KEY
-  LW_API_SECRET: $LW_API_SECRET
-    
+      
 - name: 'Iac Scan'
   script: |
     #!/usr/bin/env bash
